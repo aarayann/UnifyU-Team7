@@ -16,7 +16,7 @@ const BenTime = () => {
   const messagesEndRef = useRef<HTMLDivElement>(null);
   
   // Updated API key and model
-  const API_KEY = "AIzaSyDmkNJBdWSOQQrFJzUvMNF708lzf6f5g0A";
+  const API_KEY = "AIzaSyALXZHcvALcuNBcSG6AJjAsApqUkj5k9Ro";
   
   useEffect(() => {
     // Add welcome message when component mounts
