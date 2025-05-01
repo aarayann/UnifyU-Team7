@@ -11,7 +11,7 @@ const Resources: React.FC = () => {
       id: "1",
       title: "GD Room Booking",
       icon: <FileText className="h-5 w-5" />,
-      url: "#",
+      url: "http://10.6.0.121/gdroombooking/",
       highlighted: false,
     },
     {
@@ -25,7 +25,7 @@ const Resources: React.FC = () => {
       id: "3",
       title: "E-Library (PYQs)",
       icon: <BookOpen className="h-5 w-5" />,
-      url: "#",
+      url: "https://bennett.refread.com/#/home",
       highlighted: false,
     },
   ];
@@ -60,12 +60,8 @@ const Resources: React.FC = () => {
             <a 
               href={resource.url}
               className="block h-full"
-              onClick={(e) => {
-                if (resource.url === "#") {
-                  e.preventDefault();
-                  // You can add functionality later for the placeholder links
-                }
-              }}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <Card className={`h-full cursor-pointer transition-all duration-200 border ${
                 resource.highlighted ? "bg-red-50 border-red-200" : "hover:border-gray-300"
